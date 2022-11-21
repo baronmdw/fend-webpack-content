@@ -8,4 +8,7 @@ import './styles/header.scss'
 
 console.log(checkForName);
 
-alert("Hello there!")
+export {
+    checkForName,
+    handleSubmit
+}
