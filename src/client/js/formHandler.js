@@ -12,3 +12,16 @@ export function handleSubmit(event) {
         document.getElementById('results').innerHTML = res.message
     })
 }
+
+export function anotherSubmit(event)  {
+    event.preventDefault()
+
+    console.log("try to get some information"),
+    fetch("https://www.openligadb.de/api/getmatchdata/WM2022/2022/1")
+    .then(res => res.json())
+    .then(function(res) {
+        document.getElementById("results").textContent = res[0]["Team1"]["TeamName"]
+    })
+}
+
+

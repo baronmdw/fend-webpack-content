@@ -9,8 +9,8 @@ module.exports = {
     devtool: "source-map",
     entry: "./src/client/index.js",
     output: {
-        libraryTarget: "var",
-        library: "Client"
+        libraryTarget: 'var',
+        library: 'Client'
     },
     module:{
         rules: [
